@@ -1,4 +1,5 @@
 import data from '../data/data.json'
+import Card from '../components/Card'
 
 export const PageWelcome = () => {
 	
@@ -6,12 +7,8 @@ export const PageWelcome = () => {
 		<>
 			<p>Welcome to this site.</p>
 			<div className= "glossaryContainer">
-				{data.glossary.map( (el) =>
-				<div className= "glossaryCard" key={el.id}>
-					<h3>{el.id}. {el.term}</h3>
-					<p>{el.meaning}</p>
-				</div>  
-				
+				{data.glossary.map( (el:any) =>
+				<Card el={el} key={el.id}/>
 				)}
 			</div>
 
