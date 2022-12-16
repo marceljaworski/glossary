@@ -153,53 +153,83 @@
         },
         {
             "id": 31,
-            "term": "Eagle, bateleur",
-            "meaning": ""
+            "term": "Page Template",
+            "meaning": "The layout for a webpage — pages that have similar structures share the same template (such as event detail pages for a variety of events on the same website). Pages that are radically different use separate templates."
         },
         {
             "id": 32,
-            "term": "Yak",
-            "meaning": ""
+            "term": "Plugin",
+            "meaning": "Modules or software that can be added (“plugged in”) to a system for added functionality or features."
         },
         {
             "id": 33,
-            "term": "Shrike, common boubou",
-            "meaning": ""
+            "term": "Property",
+            "meaning": "Characteristics that are dictated by CSS such as color schemes and fonts."
         },
         {
             "id": 34,
-            "term": "Shrike, common boubou",
-            "meaning": ""
+            "term": "Redirects",
+            "meaning": "Automatic forwards from one URL to another — usually from an old website URL to the same page on a new website (these are called 301 Redirects). Other redirects may pivot between two domains (e.g., idealist.com redirects to idealist.org), a shortened URL to the full URL (e.g., bit.ly URLs), and geotargeted URLs."
         },
         {
             "id": 35,
-            "term": "Shrike, common boubou",
-            "meaning": ""
+            "term": "Registrar",
+            "meaning": "Company used to register domains (e.g., GoDaddy, Hover, Network Solutions)."
         },
         {
             "id": 36,
-            "term": "Shrike, common boubou",
-            "meaning": ""
+            "term": "Resolution",
+            "meaning": "Essentially how large an image or graphic can be rendered on a display. Oftentimes developers talk about the resolution of photos as photos at a low resolution won’t display as well if they need to be sized for the full width of a desktop screen. Resolutions are measured in pixels (e.g., the resolution of a MacBook Air screen is 1440 x 900 pixels)."
         },
         {
             "id": 37,
-            "term": "Shrike, common boubou",
-            "meaning": ""
+            "term": "Responsive Design",
+            "meaning": "Websites that accommodate the screen on which they’re being viewed. This became a huge trend in website design when browsing on mobile and tablet devices became more popular, which has led many developers to opt for a “mobile-first” approach — optimizing a website design for phone and tablet use first and then making sure it looks good on a laptop/desktop."
         },
         {
             "id": 38,
-            "term": "Shrike, common boubou",
-            "meaning": ""
+            "term": "SAAS Platforms",
+            "meaning": "“Software As A Service.” The most basic of cloud platforms; allows users to share files and collaborate on projects through their browser. Some SAAS platforms include Google Drive and Dropbox. Other cloud options are Platform as a Service (PAAS; Facebook, Twitter, etc.) and Infrastructure as a Service (IAAS; Amazon Web Services, Microsoft Azure)."
         },
         {
             "id": 39,
-            "term": "Shrike, common boubou",
-            "meaning": ""
+            "term": "Server",
+            "meaning": "Computers running software that allows users to access your website — this is what houses the hosting. If your domain is the website’s mailing address and the hosting is its house, the server is the land it’s built on."
         },
         {
             "id": 40,
-            "term": "Shrike, common boubou",
-            "meaning": ""
+            "term": "Sitemap",
+            "meaning": "Outline of all pages on a website, organized in hierarchical order — much like the outlines you used to use for your college term papers."
+        },
+        {
+            "id": 41,
+            "term": "Slider",
+            "meaning": "Carousel of images usually featured on the homepage of a site that rotate, highlighting different photos, links, and content."
+        },
+        {
+            "id": 42,
+            "term": "UI",
+            "meaning": "“User Interface.” The visual elements that go into a website or app. This is the form to UX’s function."
+        },
+        {
+            "id": 43,
+            "term": "UX",
+            "meaning": "“User Experience.” A user’s interaction with an interface with a focus on how satisfying and successful the experience is. The function to complement UI’s form."
+        },
+        {
+            "id": 44,
+            "term": "Widgets",
+            "meaning": "Applications that allow for specific interactive functions to be performed on a website."
+        },
+        {
+            "id": 45,
+            "term": "Wireframe",
+            "meaning": "The bare bones structure of a website. No fonts, colors, or images, this layout is the first step to making sure that the foundation is sound before content is added."
+        },
+        {
+            "id": 46,
+            "term": "WYSIWYG",
+            "meaning": "“What You See is What You Get.” A visual content editor within CMS that allows you to modify content in your website without needing to know HTML. If you’ve ever made text in your website bold just by highlighting and clicking “Bold,” you were using WYSIWYG."
         }
     ]
 }

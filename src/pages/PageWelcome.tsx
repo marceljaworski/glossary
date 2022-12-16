@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
-import data from '../data/data.json'
-import Card from '../components/Card'
+import data from '../data/data.json';
 
 interface ITerm {
+	id: number;
 	term: string;
 	meaning: string;
 	isOpen: boolean;
 }
+const zahl: number = 1;
+console.log(zahl)
 export const PageWelcome = () => {
 	const [terms, setTerms] = useState<ITerm[]>([])
 	
@@ -27,17 +29,19 @@ export const PageWelcome = () => {
 	}
 	return (
 		<>
-			<p>There are {terms.length}</p>
+			<p>There are {terms.length} <i>terms</i></p>
 			<div className= "glossaryContainer">
-				{terms.map( (el:any) =>
+				{terms.map( (el: ITerm) =>
 				 	<div className= "card">
 					 	<h3 onClick={() => handleFlashcard(el)}>{el.term}</h3>
-				 			{el.isOpen && (<p>{el.meaning}</p>)}
+				 			{el.isOpen && (
+								<div className="textContainer">
+									<p>{el.meaning}</p>
+								</div>
+							)}
 			 		</div>  
 				)}
 			</div>
-
-
 		</>
 	);
 };

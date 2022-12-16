@@ -32,12 +32,24 @@ body {
 		background-color: #222;
 		width: 360px;
 		padding: .5rem;
-		border-bottom: 4mm ridge rgba(211, 220, 50, .6);
+		border-bottom: .5rem ridge rgba(211, 220, 50, .6);
 		margin-bottom: .2rem;
 
 		h3 {
 			color: turquoise;
+			padding-inline-start: .9rem;
+			cursor: pointer;
+			&:hover {
+				font-weight: bolder;
+			}
 			
+		}
+		.textContainer {
+			background-color: #333;
+			padding: .2rem;
+			margin-bottom: .2rem;
+			text-align: left;
+			padding-inline: .9rem;
 		}
 	}
 	
