@@ -38,6 +38,7 @@ body {
 		h3 {
 			color: turquoise;
 			padding-inline-start: .9rem;
+			display: inline-block;
 			cursor: pointer;
 			&:hover {
 				font-weight: bolder;

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { BsBackspace } from "react-icons/bs";
 import data from '../data/data.json';
 
 
@@ -58,15 +59,18 @@ export const PageWelcome = () => {
 		
 		})
 	}
-	
+	const handleDelete = (el: any) => {
+		const termsCopy = terms.filter((term) => {
+			return term.id !== el.id
+		})
+		setTerms(termsCopy)
+	}
 	return (
 		<>
 			<div className="addWord">
 				<input type="text" placeholder='Term' onChange={handleInput} value={newTerm.term} name="term"></input>
 				<input type="text" placeholder='Meaning' onChange={handleInput} value={newTerm.meaning} name="meaning"></input>
-				<button onClick={clickHandler}>Add new Word</button>
-
-				
+				<button onClick={clickHandler}>Add new Word</button>	
 			</div>
 			<p>There are {terms.length} <i>terms</i></p>
 			<div className= "glossaryContainer">
@@ -75,7 +79,8 @@ export const PageWelcome = () => {
 						<h3><i>{letter}</i></h3>
 						{letterList(letter).map( (el: ITerm,) =>
 							<div className= "card" key={el.id}>
-							<h3 onClick={() => handleFlashcard(el)}>{el.term}</h3>
+								
+							<h3 onClick={() => handleFlashcard(el)}>{el.term}</h3><BsBackspace onClick={() => handleDelete(el)} />
 								{el.isOpen && (
 									<div className="textContainer">
 										
