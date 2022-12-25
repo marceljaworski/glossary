@@ -230,6 +230,18 @@
             "id": 46,
             "term": "WYSIWYG",
             "meaning": "“What You See is What You Get.” A visual content editor within CMS that allows you to modify content in your website without needing to know HTML. If you’ve ever made text in your website bold just by highlighting and clicking “Bold,” you were using WYSIWYG."
+        },
+        {
+            "id": 47,
+            "term": "DOM",
+            "meaning": "The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree; with them one can change the structure, style or content of a document. Nodes can have event handlers attached to them. Once an event is triggered, the event handlers get executed."
+        },
+        {
+            "id": 48,
+            "term": "Vue.js",
+            "meaning": "Vue.js (commonly referred to as Vue; pronounced 'view') is an open-source model-view-viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members."
         }
+      
+
     ]
 }
