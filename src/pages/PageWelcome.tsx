@@ -30,36 +30,50 @@ export const PageWelcome = () => {
 		el.isOpen = !el.isOpen;
 		setTerms([...terms]);
 	}
-	const aList = (letter: any ) => terms.filter(el => el.term.charAt(0) == letter.toUpperCase())
+	const letterList = (letter: any ) => terms.filter(el => el.term.charAt(0) == letter.toUpperCase())
 	const abc= ["A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V", "W", "X", "Y", "Z"]
-
-	// console.log()
-	// const handleSubmit = (event: any ) => {
-	// 	const name= target.name
-	// 	const _term: ITerm = {
-	// 		id: terms.length,
-
-	// 		isOpen: false,
-	// 	};
-	// }
-
+	const [newTerm, setnewTerm] = useState<ITerm>({
+		id: terms.length,
+		term:"",
+		meaning: "",
+		isOpen: false,
+	
+	})
+	const handleInput = (event: any) => {
+		setnewTerm({
+			...newTerm,
+			[event.target.name]: event.target.value,
+		});
+		
+	};
+	const clickHandler = () => {
+		const termsCopy = [...terms];
+		termsCopy.push(newTerm)
+		setTerms(termsCopy)
+		setnewTerm({
+			id: terms.length,
+			term:"",
+			meaning: "",
+			isOpen: false,
+		
+		})
+	}
+	
 	return (
 		<>
-			{/* <div className="addWord">
-				<form onSubmit={handleSubmit}>
-					<label>
-						Term:
-						<input type="text" name= "term" value={target} />
-					</label>
-					<input type="submit" value="Submit" />
-				</form>
-			</div> */}
+			<div className="addWord">
+				<input type="text" placeholder='Term' onChange={handleInput} value={newTerm.term} name="term"></input>
+				<input type="text" placeholder='Meaning' onChange={handleInput} value={newTerm.meaning} name="meaning"></input>
+				<button onClick={clickHandler}>Add new Word</button>
+
+				
+			</div>
 			<p>There are {terms.length} <i>terms</i></p>
 			<div className= "glossaryContainer">
-				{abc.map( (letter: string) =>
-					<div className='letterContainer'>
+				{abc.map( (letter: string, index: number) =>
+					<div className='letterContainer' key={index}>
 						<h3><i>{letter}</i></h3>
-						{aList(letter).map( (el: ITerm) =>
+						{letterList(letter).map( (el: ITerm,) =>
 							<div className= "card" key={el.id}>
 							<h3 onClick={() => handleFlashcard(el)}>{el.term}</h3>
 								{el.isOpen && (
