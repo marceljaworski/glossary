@@ -1,7 +1,7 @@
 export const PageInfo = () => {
 	return (
 		<>
-			<p>This is the info page.</p>
+			<p>A trivia game that tests the user on the most important terms that every website developer needs to know.</p>
 		</>
 	);
 };
