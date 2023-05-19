@@ -16,7 +16,7 @@ a trivia game that tests the user on the most important terms that every website
       background-color: #333;
     }
   </style>
-``
+```
 ## text source
 
 https://www.wholewhale.com/tips/developer-terms-glossary/
