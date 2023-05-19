@@ -80,14 +80,14 @@ export const PageWelcome = () => {
 						{letterList(letter).map( (el: ITerm,) =>
 							<div className= "card" key={el.id}>
 								
-							<h3 onClick={() => handleFlashcard(el)}>{el.term}</h3><BsBackspace onClick={() => handleDelete(el)} />
+								<h3 onClick={() => handleFlashcard(el)}>{el.term}</h3><BsBackspace className= "delete" onClick={() => handleDelete(el)} />
 								{el.isOpen && (
 									<div className="textContainer">
 										
 										<p>{el.meaning}</p>
 									</div>
 								)}
-						</div>  
+							</div>  
 						)}
 
 					</div>

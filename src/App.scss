@@ -34,6 +34,7 @@ body {
 		padding: .1rem;
 		border-bottom: .5rem ridge rgba(211, 220, 50, .6);
 		margin-bottom: .2rem;
+		position: relative;
 
 		h3 {
 			color: turquoise;
@@ -44,6 +45,11 @@ body {
 				font-weight: bolder;
 			}
 			
+		}
+		.delete {
+			position: absolute;
+			right: 2rem;
+			top: 1.5rem
 		}
 		.textContainer {
 			background-color: #333;
